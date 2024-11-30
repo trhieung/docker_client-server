@@ -1,0 +1,22 @@
+services:
+  user-1:
+    build:
+      context: ./client           # Path to the directory where the Dockerfile is located
+      dockerfile: Dockerfile      # If the file is named something other than 'Dockerfile', specify it here
+    ports:
+      - "8081:8081"               # Expose port (adjust according to your needs)
+    volumes:
+      - ./client:/app             # Mount the 'client' directory to the container
+    environment:
+      - ENV_VAR=value             # You can set environment variables here if needed
+
+  server:
+    build:
+      context: ./server           # Path to the directory where the Dockerfile is located
+      dockerfile: Dockerfile      # Specify the Dockerfile name if it's different
+    ports:
+      - "8080:8080"               # Expose port for server
+    volumes:
+      - ./server:/app             # Mount the 'server' directory to the container
+    environment:
+      - SERVER_ENV=value         # You can add server-specific environment variables here if needed

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libs/Release/libcore_static.a CMakeFiles/core_static.dir/custom_example.c.o
+/usr/bin/ranlib libs/Release/libcore_static.a
