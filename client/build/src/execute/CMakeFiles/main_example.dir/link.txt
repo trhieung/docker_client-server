@@ -1,1 +1,0 @@
-/usr/bin/cc -O3 -DNDEBUG CMakeFiles/main_example.dir/main_example.c.o -o Release/main_example  ../core/libs/Release/libcore_static.a /usr/lib/libcurl.so /usr/lib/libssl.so /usr/lib/libcrypto.so
