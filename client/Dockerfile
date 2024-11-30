@@ -6,7 +6,7 @@ FROM user_image:latest
 WORKDIR /app
 
 # Install necessary dependencies, including CMake
-RUN apk add --no-cache cmake make g++ gcc curl openssl-dev libcurl curl-dev
+RUN apk add --no-cache cmake make g++ gcc curl openssl-dev libcurl curl-dev bash htop
 
 # Copy files from the host machine to the container
 COPY . .

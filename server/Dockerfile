@@ -10,7 +10,7 @@ COPY . .
 
 # Install any necessary dependencies (if needed)
 RUN apt-get update && \
-    apt-get install -y procps && \
+    apt-get install -y procps htop iproute2 net-tools iputils-ping && \
     pip install --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
